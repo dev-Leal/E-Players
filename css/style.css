@@ -15,8 +15,13 @@
 body{
     background-color: var(--background);
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .gradient{
     background: rgba(252,30,137,1);
     background: -moz-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
@@ -28,4 +33,32 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1e89', endColorstr='#7277c3', GradientType=1 );
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
+header .container{
+    display: flex;
+    padding: 20px 0;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between
+}
+
+header nav{
+    width: 60%;
+}
+
+header a {
+    text-transform: uppercase;
+}
+
+header img{
+    margin-right: 100px;
+
+}
