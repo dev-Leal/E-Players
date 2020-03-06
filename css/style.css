@@ -82,14 +82,21 @@ header img{
 
 .partidas .container{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.proximas_partidas{
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-flow: wrap;
 }
 
 .partida{
     padding: 0 0 10px 0;
 }
+
 .partida img{
     width: 40px;
     padding: 0 10px;
@@ -436,3 +443,49 @@ select{
 .campo .btn{
     margin: auto;
 }
+
+/* Início Responsividade */
+/* 1200px */
+
+@media(max-width: 800px){
+    .container{
+        width: 90%;
+    }
+    header .container img{
+        max-width: 180px;
+    }
+    .partidas .container{
+        align-items: flex-start;
+        flex-flow: nowrap;
+    }
+    .em_andamento{        
+        width: 30%;
+    }
+    .proximas_partidas{
+        width: 70%;
+        flex-flow: wrap;
+    }
+    .ligas h4{
+        font-size: 30px;
+    }
+    .ligas h3{
+        font-size: 60px;
+    }
+    .ligas img{
+        height: 90px;
+    }
+    .sobre img{
+        max-width: 50%;
+        left: 30px;
+    }
+    .texto_sobre{
+        width: 50%;
+        margin-right: 30px;
+    }
+    .content{
+        margin-top: 50px;
+    }
+
+
+} /* Fim Media Query 1200px */
+
